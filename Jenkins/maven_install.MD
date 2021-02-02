@@ -41,4 +41,5 @@ So far we have completed the installation of maven software to support maven plu
   - `Manage Jenkins` > `Global Tool Configuration` > `Maven`
   - Name -> M2_HOME
   -> Maven_Home -> /opt/maven
-
+3. Create New Maven Item in Jenkins
+  - New item -> Enter Item Name -> Select Maven Project -> General -> Source Code management -> Select git -> Give git URL and branch Name-> Build - give pom.xml->clean and option -> clean install package -> apply and save
