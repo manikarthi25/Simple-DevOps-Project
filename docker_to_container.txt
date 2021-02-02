@@ -1,0 +1,15 @@
+Docker To Container - used to integrate Jenkins with Tomcat server for deploy our application - create new VM
+
+1. Add docker to container in jenkins
+    manage jenkins -> manage plugins -> available -> deploy to container ->install without restart
+
+2. Create new job for deploy VM
+   New Item -> give item name(dploy_on_tomcat_server) -> maven project -> ok -> give description -> select git -> give git URL -> give branch name
+   -> root POM give pom.xml -> Goals and Options (clean install package) -> Deploy war/ear to container -> post build action
+   -> WAR/EAR files (give war file name or give **/*.war) -> conatiners (select Tomcat 8 and give user name and password of tomcat) -> tomcat URL -Apply -> save
+   
+   
+   
+   cd /opt/tomcat/webapps/ls -> war file is there
+   cd /opt/tomcat/conf/tomcat-users.xml
+   
