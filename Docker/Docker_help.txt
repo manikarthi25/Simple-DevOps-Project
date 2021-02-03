@@ -13,12 +13,12 @@
    - docker image ls or docker images -> list out docker which are present now
    - docker pull tomcat:latest -> pull tomact latest official image from https://hub.docker.com/, if we need particular tomcat version, give tomcat version number
    - docker run --name tomcat-container -p 8080:8080 tomcat:latest -> create tomcat container
-            -> --name - container name, -p - port number, 8080:8080 - expose port number : internal working port number, tomcat:latest - image name
+            -> --name - container name, -p - port number, 8080:8080 - expose port number(Host port) : internal working port number (container port), tomcat:latest - image name
    
    - docker ps -a -> list out docker container whisc is not running
    - docker rm fffo65787h -> fffo65787h container name
    - docker run -d --name tomcat-container -p 8080:8080 tomcat:latest
-          -> -d tomcat container create in detached mode.
+          -> -d tomcat container create in detached mode. it means run in background else it will run foreground mode
    
 Note: 
 1. first need to create docker file 
