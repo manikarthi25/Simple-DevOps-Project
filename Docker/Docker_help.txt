@@ -7,11 +7,18 @@
    - clear
    - yum install docker and enter Y (Install docker community edition)
    - docker ps -> it display all running containers (Docker daemon is not running)
-   - service docker status - check docker status
-   - service docker start - start the docker
-   - service docker stop - stop the docker
-   - 
+   - service docker status -> check docker status
+   - service docker start -> start the docker
+   - service docker stop -> stop the docker
+   - docker image ls or docker images -> list out docker which are present now
+   - docker pull tomcat:latest -> pull tomact latest official image from https://hub.docker.com/, if we need particular tomcat version, give tomcat version number
+   - docker run --name tomcat-container -p 8080:8080 tomcat:latest -> create tomcat container
+            -> --name - container name, -p - port number, 8080:8080 - expose port number : internal working port number, tomcat:latest - image name
    
+   - docker ps -a -> list out docker container whisc is not running
+   - docker rm fffo65787h -> fffo65787h container name
+   - docker run -d --name tomcat-container -p 8080:8080 tomcat:latest
+          -> -d tomcat container create in detached mode.
    
 Note: 
 1. first need to create docker file 
