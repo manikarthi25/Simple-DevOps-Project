@@ -1,0 +1,30 @@
+1. Create new instance for docker
+2. Login new instance which is created for docker
+3. install docker
+   - sudo su -
+   - homename docker-host
+   - suod su -
+   - clear
+   - yum install docker and enter Y (Install docker community edition)
+   - docker ps -> it display all running containers (Docker daemon is not running)
+   - service docker status - check docker status
+   - service docker start - start the docker
+   - service docker stop - stop the docker
+   - 
+   
+   
+Note: 
+1. first need to create docker file 
+2. docker file create docker image 
+3. docker image create docker container 
+
+Note:
+1. https://hub.docker.com/ - this is docker hub - we store the docker image here(Some of predefined docker image available in docker hub)
+
+Two way used for store or register the docker image
+1. Private
+2. Public
+
+   
+   
+    
