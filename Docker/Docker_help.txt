@@ -19,6 +19,18 @@
    - docker rm fffo65787h -> fffo65787h container name
    - docker run -d --name tomcat-container -p 8080:8080 tomcat:latest
           -> -d tomcat container create in detached mode. it means run in background else it will run foreground mode
+          
+   - docker exec -it tomcat-container /bin/base -> login into container
+   - ls
+   - cd webapps -> there is not file , copy all files from webapps.dist to webapps
+   - cd ..
+   - cd webapps.dist
+   - cp -R * ../webapps -> -R * it means all files
+   
+   Its not working tomcat, download older tomcat version like tomcat 8
+   - docker pull tomcat:8.0
+   - docker images 
+   
    
 Note: 
 1. first need to create docker file 
